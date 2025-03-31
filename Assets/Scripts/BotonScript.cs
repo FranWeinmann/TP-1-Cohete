@@ -6,25 +6,15 @@ public class BotonScript : MonoBehaviour
 {
 
     public GameObject botonGO;
+    public CoheteScript coheteScript;
 
     void OnMouseDown()
     {
         botonGO.SetActive(false);
+        coheteScript.Despegue();
     }
     void OnMouseUp()
     {
         botonGO.SetActive(true); 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
